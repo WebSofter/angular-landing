@@ -12,3 +12,16 @@ services:
       - NODE_ENV=development
     stdin_open: true
     tty: true
+    labels:
+      - 'traefik.enable=true'
+      - 'traefik.http.routers.ngland.tls=true'
+      - 'traefik.http.routers.ngland.tls.certresolver=myresolver'
+      - 'traefik.http.routers.ngland.entrypoints=websecure'
+      - 'traefik.http.routers.ngland.rule=Host(`ng-land.wsofter.com`)'
+      - 'traefik.http.services.ngland.loadbalancer.server.port=4200'
+    networks:
+      - traefik-network
+
+networks:
+  traefik-network:
+    external: true
