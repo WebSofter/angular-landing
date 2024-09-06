@@ -1,0 +1,47 @@
+@import '../../../../styles/_variables';
+
+.top-nav {
+  position: fixed;
+  top: 0px;
+  background-color: $color-black;
+  height: 63px;
+  // width: 100%;
+  width: -webkit-fill-available;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 $spacing-unit-35 0 $spacing-unit-35;
+
+  .main-menu {
+    display: flex;
+    align-items: center;
+
+    .top-logo {
+      img {
+        height: 30px;
+      }
+    }
+    ul {
+      li {
+        list-style: none;
+        float: left;
+        padding: $spacing-unit-14;
+
+        a {
+          color: $color-white;
+          opacity: 0.4;
+          font-weight: 600;
+          font-size: $font-size-16;
+          text-decoration: none;
+
+          &.active {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  .auth-menu {
+
+  }
+}

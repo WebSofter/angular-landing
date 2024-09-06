@@ -1,0 +1,198 @@
+@import '../../../styles/_variables';
+
+/**
+* Block Banner
+*/
+
+.block-banner {
+  background-color: $color-white;
+  height: 600px;
+  // background-image: url('/images/banner-bg.png');
+  // background-repeat: no-repeat;
+  // background-position: right 240px bottom 29px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 107px;
+  .block-1 {
+    background-image: url('/images/banner-bg-1.png');
+  }
+  .block-2 {
+    .banner-title {
+      max-width: 873px;
+    }
+    .banner-slogan {
+      max-width: 682px;
+    }
+  }
+}
+
+
+/**
+* Block Advantages
+*/
+.block-advantages {
+  height: 790px;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  p {
+    max-width: 1224px;
+  }
+}
+
+/**
+* Block Economy
+*/
+.block-economy {
+  height: 679px;
+}
+
+/**
+* Block Infolist
+*/
+.block-infolist {
+  padding-top: 66px;
+  height: 869px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .accordion {
+    max-width: 1071px;
+    .tab {
+      display: block;
+      padding: 16px;
+      background-color: $color-gray-5;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+  }
+}
+
+/**
+* How To Working
+*/
+.block-how2working {
+  height: 846px;
+  padding-top: 114px;
+  .work-item {
+    width: 313.5px;
+    .card {
+      border-radius: 25px;
+      width: 100%;
+      height: 240px;
+    }
+    h2 {
+      font-size: 45px;
+    }
+  }
+}
+
+/**
+* Block Big Image
+*/
+.block-bigimage {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 838px;
+  display: block;
+}
+
+
+/**
+* Block Price
+*/
+.block-price {
+  height: 789px;
+  display: flex;
+  flex-direction: column;
+  background-color: $color-white;
+  justify-content: center;
+
+  .price-card {
+    width: 403px;
+    border-radius: 25px;
+    overflow:hidden;
+
+    .head {
+      height: 242px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      display: flex;
+
+      h2 {
+        font-size: 35px;
+      }
+      .text-discount {
+        color: $color-gray-5;
+        font-size: 27px;
+      }
+    }
+    .content {
+      padding: 17px;
+
+      ul {
+        padding-left: 0px;
+        list-style: none;
+      }
+    }
+    .foot {
+      padding: 17px;
+    }
+  }
+}
+
+/**
+* Block Footer
+*/
+.block-footer {
+  display: flex;
+  height: 441px;
+  background-color: $color-black;
+  justify-content: center;
+  padding-bottom: 56px;
+
+  .footer {
+    &-wrapper {
+      max-width: 1099;
+      display: flex;
+      justify-content: center;
+    }
+    &-info {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      width: 50%;
+      .copyright-text {
+        font-size: $font-size-14;
+      }
+    }
+    &-menu, &-social {
+      width: 25%;
+      ul {
+        padding-left: 0px;
+        li {
+          list-style: none;
+          padding: $spacing-unit-14;
+
+          a {
+            color: $color-white;
+            opacity: 0.4;
+            font-weight: 600;
+            font-size: $font-size-16;
+            text-decoration: none;
+
+            &.active {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
