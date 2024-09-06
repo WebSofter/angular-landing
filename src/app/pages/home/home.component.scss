@@ -46,6 +46,25 @@
 */
 .block-economy {
   height: 679px;
+  display: flex;
+  justify-content: center;
+  padding-top: 106px;
+
+  .wrapper {
+    max-width: 887px;
+
+    .eco-col:nth-child(1) {
+      width: 33.3%;
+    }
+    .eco-col:nth-child(2) {
+      width: 66.6%;
+    }
+    .card {
+      height: 280px;
+      width: 275px;
+      border-radius: 20px;
+    }
+  }
 }
 
 /**
