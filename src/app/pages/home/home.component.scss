@@ -36,9 +36,33 @@
   display: flex;
   justify-content: center;
   padding-top: 40px;
+
   p {
     max-width: 1224px;
   }
+  .card-adv {
+    width: 358px;
+    height: 515px;
+    padding: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .card-title {
+      font-size: 24px;
+      font-weight: $font-weight-bold;
+    }
+
+    &:nth-child(1) {
+      background-size: 173px auto;
+    }
+    &:nth-child(2) {
+      background-size: cover;
+    }
+    &:nth-child(3) {
+      background-size: 241px auto;
+    }
+  }
+
 }
 
 /**

@@ -12,6 +12,11 @@
     line-height: 32px;
     font-weight: $font-weight-bold;
   }
+  &-medium-24 {
+    font-size: $font-size-24;
+    line-height: 23px;
+    font-weight: $font-weight-bold;
+  }
   &-semibold {
     font-size: $font-size-12;
     line-height: 0;
@@ -54,6 +59,20 @@
   }
   &-right{
     text-align: right;
+  }
+
+  // Blocks
+  &-description {
+    &__gray {
+      color: $color-gray;
+      font-size: $font-size-18;
+      font-weight: $font-weight-regular;
+    }
+    &__white {
+      color: $color-white;
+      font-size: $font-size-16;
+      font-weight: $font-weight-regular;
+    }
   }
 }
 
@@ -102,12 +121,20 @@
   &-center {
     justify-content: center;
   }
-}
-// Blocks
-.block {
-  &-description {
-    color: $color-gray;
-    font-size: $font-size-18;
-    font-weight: $font-weight-regular;
+  &-between {
+    justify-content: space-between;
   }
 }
+// Borders
+.border {
+  &-1 {
+    border-radius: $spacing-unit-14;
+  }
+  &-2 {
+    border-radius: $spacing-unit-32;
+  }
+  &-1 {
+    border-radius: $spacing-unit-40;
+  }
+}
+
