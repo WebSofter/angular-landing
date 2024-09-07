@@ -7,16 +7,15 @@
 .block-banner {
   background-color: $color-white;
   height: 600px;
-  // background-image: url('/images/banner-bg.png');
-  // background-repeat: no-repeat;
-  // background-position: right 240px bottom 29px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   padding-top: 107px;
-  .block-1 {
+  max-width: 1190px;
+  margin: 0 auto;
 
-  }
+  .block-1 {}
   .block-2 {
     .banner-title {
       max-width: 873px;
