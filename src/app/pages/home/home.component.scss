@@ -35,6 +35,7 @@
   display: flex;
   justify-content: center;
   padding-top: 40px;
+  padding-bottom: 59px;
 
   p {
     max-width: 1224px;
@@ -78,9 +79,31 @@
 
   .wrapper {
     max-width: 887px;
-
+    .eco-arrow {
+      margin-bottom: 18px;
+      img {
+        width: 108px;
+      }
+    }
+    .price-table {
+      top: 60%;
+      transform: translateY(-50%);
+      tr {
+        td {
+          &:nth-child(1) {
+            width: 50%;
+          }
+        }
+      }
+    }
     .eco-col:nth-child(1) {
       width: 33.3%;
+      .card {
+        padding-top: 30px;
+      }
+      p {
+        line-height: 25px;
+      }
     }
     .eco-col:nth-child(2) {
       width: 66.6%;

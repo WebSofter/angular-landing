@@ -115,6 +115,14 @@
     }
   }
 }
+
+// Sizes
+.w {
+  &-100 {
+    width: 100%;
+  }
+}
+
 // Flex
 .d-flex {
   display: flex;
@@ -161,5 +169,18 @@
   &-none {
     list-style: none;
     padding-left: 0px;
+  }
+}
+
+// Position
+.position {
+  &-relative {
+    position: relative;
+  }
+  &-absolute {
+    position: absolute;
+  }
+  &-fixed {
+    position: fixed;
   }
 }
