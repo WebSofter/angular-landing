@@ -42,7 +42,6 @@
   }
   .card-adv {
     width: 358px;
-    height: 515px;
     padding: 25px;
     background-repeat: no-repeat;
     background-position: center;
@@ -53,12 +52,16 @@
     }
 
     &:nth-child(1) {
+      height: 515px;
       background-size: 173px auto;
     }
     &:nth-child(2) {
+      height: 547px;
+      margin-top: -18px;
       background-size: cover;
     }
     &:nth-child(3) {
+      height: 515px;
       background-size: 241px auto;
     }
   }
