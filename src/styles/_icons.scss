@@ -15,4 +15,10 @@
   &-power:before{
     content: url('/images/icons/power.svg');
   }
+  &-plus:before{
+    content: url('/images/icons/plus.svg');
+  }
+  &-close:before{
+    content: url('/images/icons/close.svg');
+  }
 }

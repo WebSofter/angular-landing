@@ -101,17 +101,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  .accordion {
-    max-width: 1071px;
-    .tab {
-      display: block;
-      padding: 16px;
-      background-color: $color-gray-5;
-      border-radius: 20px;
-      margin-bottom: 12px;
-    }
-  }
 }
 
 /**
