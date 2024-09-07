@@ -7,6 +7,11 @@
     line-height: 69px;
     font-weight: $font-weight-bold;
   }
+  &-big-58 {
+    font-size: $font-size-58;
+    line-height: 57px;
+    font-weight: $font-weight-bold;
+  }
   &-medium {
     font-size: $font-size-33;
     line-height: 32px;
@@ -128,6 +133,14 @@
   }
   &-between {
     justify-content: space-between;
+  }
+  &-end {
+    justify-content: end;
+  }
+}
+.align {
+  &-center {
+    align-items: center;
   }
 }
 // Borders
