@@ -126,9 +126,34 @@
       border-radius: 25px;
       width: 100%;
       height: 240px;
+      background-repeat: no-repeat;
     }
     h2 {
       font-size: 45px;
+    }
+    &:nth-child(1) {
+      .card {
+        background-size: 265px auto;
+        background-position: 55px 51px;
+      }
+    }
+    &:nth-child(2) {
+      .card {
+        background-size: auto 210px;
+        background-position: center;
+      }
+    }
+    &:nth-child(3) {
+      .card {
+        background-size: 265px auto;
+        background-position: 55px 51px;
+      }
+    }
+    &:nth-child(4) {
+      .card {
+        background-size: auto 180px;
+        background-position: center;
+      }
     }
   }
 }
