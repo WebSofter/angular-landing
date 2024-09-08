@@ -8,17 +8,26 @@
 
   &-trend:before{
     content: url('/images/icons/trend.svg');
+    vertical-align: middle;
   }
   &-pie:before{
     content: url('/images/icons/pie.svg');
+    vertical-align: middle;
   }
   &-power:before{
     content: url('/images/icons/power.svg');
+    vertical-align: middle;
   }
   &-plus:before{
     content: url('/images/icons/plus.svg');
+    vertical-align: middle;
   }
   &-close:before{
     content: url('/images/icons/close.svg');
+    vertical-align: middle;
+  }
+  &-menu:before{
+    content: url('/images/icons/menu.svg');
+    vertical-align: middle;
   }
 }

@@ -1,4 +1,6 @@
 @import '../../../../styles/_variables';
+@import '../../../../styles/_mixins';
+@import '../../../../styles/_icons';
 
 .top-nav {
   position: fixed;
@@ -22,27 +24,68 @@
         height: 30px;
       }
     }
-    ul {
-      li {
-        list-style: none;
-        float: left;
-        padding: $spacing-unit-14;
 
-        a {
-          color: $color-white;
-          opacity: 0.4;
-          font-weight: 600;
-          font-size: $font-size-16;
-          text-decoration: none;
+    @include respond-to('xl') {
+      ul {
+        li {
+          list-style: none;
+          float: left;
+          padding: $spacing-unit-14;
 
-          &.active {
-            opacity: 1;
+          a {
+            color: $color-white;
+            opacity: 0.4;
+            font-weight: 600;
+            font-size: $font-size-16;
+            text-decoration: none;
+
+            &.active {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+
+    @include respond-to('md') {
+      ul {
+        position: absolute;
+        background-color: $color-black;
+        width: 100%;
+        top: 63px;
+        left: 0px;
+        text-align: center;
+        margin: 0px;
+        padding-left: 0px;
+        display: none;
+        &.mobile-active {
+          display: block;
+        }
+        li {
+          float: none;
+          a {
+            &.active {
+              opacity: 1;
+            }
           }
         }
       }
     }
   }
-  .auth-menu {
-
+  @include respond-to('xl') {
+    .ext-menu-auth {
+      display: block;
+    }
+    .ext-menu-mobile {
+      display: none;
+    }
+  }
+  @include respond-to('md') {
+    .ext-menu-auth {
+      display: none;
+    }
+    .ext-menu-mobile {
+      display: block;
+    }
   }
 }

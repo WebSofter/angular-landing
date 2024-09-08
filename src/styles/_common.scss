@@ -188,3 +188,10 @@
     position: fixed;
   }
 }
+
+// Cursor
+.cursor {
+  &-pointer {
+    cursor: pointer;
+  }
+}
