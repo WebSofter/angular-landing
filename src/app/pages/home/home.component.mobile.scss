@@ -3,6 +3,17 @@
 @import '../../../styles/vendor/typed';
 
 /**
+* Mobile: Our Products
+*/
+.block-products {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background-color: $color-white;
+  min-height: 250px;
+}
+
+/**
 * Mobile: Block Blog
 */
 .block-blog {
