@@ -86,6 +86,16 @@
     }
     .ext-menu-mobile {
       display: block;
+      i {
+        height: 17px;
+        width: 17px;
+        display: block;
+        float: right;
+
+        &::before {
+
+        }
+      }
     }
   }
 }
