@@ -77,6 +77,10 @@
       color: $color-gray;
       font-size: $font-size-18;
       font-weight: $font-weight-regular;
+      &-16 {
+        color: $color-gray;
+        font-size: $font-size-16;
+      }
     }
     &__white {
       color: $color-white;
