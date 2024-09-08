@@ -20,6 +20,11 @@
       border-radius: 32px;
       margin-bottom: 16px;
 
+      &-top-label {
+        text-align: center;
+        color: $color-blue-9;
+      }
+
       &-head{
         height: 30%;
         h3 {
