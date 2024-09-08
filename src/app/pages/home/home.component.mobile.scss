@@ -22,7 +22,6 @@
 
       &-top-label {
         text-align: center;
-        color: $color-blue-9;
       }
 
       &-head{
@@ -40,6 +39,35 @@
         height: 10%;
         text-align: center;
         padding: 20px;
+      }
+
+      &.dark {
+        background-color: $color-black;
+        .product-card-head {
+          p {
+            color: $color-blue-9;
+          }
+          h3 {
+            color: $color-white;
+          }
+        }
+        .product-card-body {
+          color: $color-white;
+        }
+      }
+      &.light {
+        background-color: $color-gray-5;
+        .product-card-head {
+          p {
+            color: $color-gray;
+          }
+          h3 {
+            color: $color-black;
+          }
+        }
+        .product-card-body {
+          color: $color-black;
+        }
       }
     }
   }

@@ -46,4 +46,36 @@
     content: url('/images/icons/scan.svg');
     vertical-align: middle;
   }
+  &-bubble:before{
+    content: url('/images/icons/bubble.svg');
+    vertical-align: middle;
+  }
+  &-cup:before{
+    content: url('/images/icons/cup.svg');
+    vertical-align: middle;
+  }
+  &-document-text:before{
+    content: url('/images/icons/document-text.svg');
+    vertical-align: middle;
+  }
+  &-grammerly:before{
+    content: url('/images/icons/grammerly.svg');
+    vertical-align: middle;
+  }
+  &-presention-chart:before{
+    content: url('/images/icons/presention-chart.svg');
+    vertical-align: middle;
+  }
+  &-profile-2user:before{
+    content: url('/images/icons/profile-2user.svg');
+    vertical-align: middle;
+  }
+  &-profile-add:before{
+    content: url('/images/icons/profile-add.svg');
+    vertical-align: middle;
+  }
+  &-recovery-convert:before{
+    content: url('/images/icons/recovery-convert.svg');
+    vertical-align: middle;
+  }
 }
