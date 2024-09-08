@@ -13,8 +13,11 @@
 @import './styles/_common';
 @import './styles/_spaces';
 @import './styles/_icons';
-body {
+
+html, body {
   font-family: $font-family-base;
+  box-sizing: border-box;
+  height: 100%;
   padding: 0;
   margin: 0;
 }
