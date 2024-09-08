@@ -19,7 +19,12 @@
 
   .hero-image {
     background-image: url('/images/banner-bg-1.svg');
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    width: 50%;
+    height: inherit;
   }
   .hero-text {
     .hero-title {
@@ -38,10 +43,6 @@
 
     .hero-image {
       background-image: url('/images/banner-bg.png');
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      text-align: center;
       height: 390px;
       width: 95%;
       order: 1;
