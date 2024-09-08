@@ -25,6 +25,10 @@
     text-align: center;
     width: 50%;
     height: inherit;
+    //
+    display: flex;
+    justify-content: center;
+    align-items: end;
   }
   .hero-text {
     .hero-title {

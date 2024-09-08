@@ -89,6 +89,37 @@
       font-weight: $font-weight-regular;
     }
   }
+
+  // Elipsis
+  &-ellipsis {
+
+    &-1, &-2, &-3 {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      -webkit-box-orient: vertical;
+      -moz-box-orient: vertical;
+      box-orient: vertical;
+    }
+
+    &-1 {
+      -webkit-line-clamp: 1;
+      -moz-line-clamp: 1;
+      line-clamp: 1;
+    }
+    &-2 {
+      -webkit-line-clamp: 2;
+      -moz-line-clamp: 2;
+      line-clamp: 2;
+    }
+    &-3 {
+      -webkit-line-clamp: 3;
+      -moz-line-clamp: 3;
+      line-clamp: 3;
+    }
+  }
 }
 
 .bg {

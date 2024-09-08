@@ -5,7 +5,7 @@ import { AccordionComponent } from '../../shared/components/accordion/accordion.
   standalone: true,
   imports: [AccordionComponent],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrls: ['./home.component.scss', './home.component.mobile.scss']
 })
 export class HomeComponent {
 
