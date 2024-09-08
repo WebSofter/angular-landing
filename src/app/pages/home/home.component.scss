@@ -1,5 +1,6 @@
 @import '../../../styles/_variables';
 @import '../../../styles/_mixins';
+@import '../../../styles/vendor/typed';
 /**
 * Block Hero
 */
@@ -37,11 +38,30 @@
 
     .hero-image {
       background-image: url('/images/banner-bg.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      text-align: center;
+      height: 390px;
+      width: 95%;
       order: 1;
     }
     .hero-text {
       order: 0;
     }
+  }
+  .hero-anime-text {
+    pointer-events: none;
+    @include typed(
+      "современный бизнес",
+      "автоматизацию и продуктивность",
+      1.5,
+      (
+        caret-width: 5px,
+        caret-space: 3px,
+        caret-color: $color-blue-6
+      )
+    );
   }
 }
 
