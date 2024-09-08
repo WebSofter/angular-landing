@@ -201,44 +201,44 @@
 .hide-to {
   &-sm {
     @include respond-to('sm') {
-      display: none;
+      display: none!important;
     }
   }
   &-md {
     @include respond-to('md') {
-      display: none;
+      display: none!important;
     }
   }
   &-lg {
     @include respond-to('lg') {
-      display: none;
+      display: none!important;
     }
   }
   &-xl {
     @include respond-to('xl') {
-      display: none;
+      display: none!important;
     }
   }
 }
 .hide-from {
   &-sm {
     @include respond-to('lsm') {
-      display: none;
+      display: none!important;
     }
   }
   &-md {
     @include respond-to('lmd') {
-      display: none;
+      display: none!important;
     }
   }
   &-lg {
     @include respond-to('llg') {
-      display: none;
+      display: none!important;
     }
   }
   &-xl {
     @include respond-to('lxl') {
-      display: none;
+      display: none!important;
     }
   }
 }
