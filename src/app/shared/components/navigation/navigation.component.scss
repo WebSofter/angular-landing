@@ -15,6 +15,11 @@
   justify-content: space-between;
   padding: 0 $spacing-unit-35 0 $spacing-unit-35;
 
+  @include respond-to('md') {
+    // height: 100%;
+    // align-items: start;
+  }
+
   .main-menu {
     display: flex;
     align-items: center;
@@ -25,7 +30,7 @@
       }
     }
 
-    @include respond-to('xl') {
+    //@include respond-to('xl') {
       ul {
         li {
           list-style: none;
@@ -45,7 +50,7 @@
           }
         }
       }
-    }
+    //}
 
     @include respond-to('md') {
       ul {
@@ -65,21 +70,28 @@
           float: none;
           a {
             &.active {
-              opacity: 1;
+              position: relative;
+
+              &:before {
+                content: url('/images/marker-ellipse.svg');
+                position: absolute;
+                top: -18px;
+                left: -20px;
+              }
             }
           }
         }
       }
     }
   }
-  @include respond-to('xl') {
-    .ext-menu-auth {
-      display: block;
-    }
-    .ext-menu-mobile {
-      display: none;
-    }
+
+  .ext-menu-auth {
+    display: block;
   }
+  .ext-menu-mobile {
+    display: none;
+  }
+
   @include respond-to('md') {
     .ext-menu-auth {
       display: none;
