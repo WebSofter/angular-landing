@@ -11,6 +11,33 @@
   padding: 16px;
   background-color: $color-white;
   min-height: 250px;
+
+  .product {
+    &-card {
+      display: flex;
+      flex-direction: column;
+      min-height: 250px;
+      border-radius: 32px;
+      margin-bottom: 16px;
+
+      &-head{
+        height: 30%;
+        h3 {
+          font-size: 55px;
+          text-align: center;
+        }
+      }
+      &-body{
+        height: 60%;
+        padding: 0 20px 0 20px;
+      }
+      &-foot{
+        height: 10%;
+        text-align: center;
+        padding: 20px;
+      }
+    }
+  }
 }
 
 /**
