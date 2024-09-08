@@ -3,7 +3,7 @@
 @import '../../../styles/vendor/typed';
 
 /**
-* Block Blog
+* Mobile: Block Blog
 */
 .block-blog {
   display: flex;
@@ -43,4 +43,15 @@
       }
     }
   }
+}
+
+/**
+* Mobile: Block Big Image
+*/
+.block-bigimage-mobile {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 838px;
+  display: block;
+  background-position: bottom;
 }
