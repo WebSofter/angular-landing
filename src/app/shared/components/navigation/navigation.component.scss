@@ -16,11 +16,6 @@
   justify-content: space-between;
   padding: 0 $spacing-unit-35 0 $spacing-unit-35;
 
-  @include respond-to('md') {
-    // height: 100%;
-    // align-items: start;
-  }
-
   .main-menu {
     display: flex;
     align-items: center;
@@ -29,10 +24,6 @@
       img {
         height: 30px;
       }
-    }
-
-    .d-none {
-      display: none;
     }
 
     //@include respond-to('xl') {
@@ -62,6 +53,9 @@
     //}
 
     @include respond-to('md') {
+      .d-none {
+        display: none;
+      }
       .menu-wrapper {
         position: absolute;
         top: 63px;
