@@ -65,7 +65,9 @@
   &-black {
     color: $color-black;
   }
-
+  &-gray {
+    color: $color-gray;
+  }
   // Alignments
   &-center {
     text-align: center;
@@ -139,6 +141,9 @@
     background-color: $color-black;
   }
   &-gray {
+    &-4 {
+      background-color: $color-gray-4;
+    }
     &-6 {
       background-color: $color-gray-6;
     }
@@ -283,3 +288,5 @@
     }
   }
 }
+
+// Disabled

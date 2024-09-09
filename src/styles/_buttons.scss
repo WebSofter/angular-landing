@@ -69,6 +69,7 @@
       background-color: $color-black;
       border: 2px solid $color-blue-9;
     }
+    &[disabled=disabled],
     &:disabled{
       background-color: $color-gray-4;
       color: $color-gray;
@@ -99,6 +100,7 @@
       background-color: $color-black;
       border: 2px solid $color-blue-9;
     }
+    &[disabled=disabled],
     &:disabled{
       background-color: $color-gray-4;
       color: $color-gray;
