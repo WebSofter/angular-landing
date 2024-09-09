@@ -31,6 +31,8 @@
     align-items: end;
   }
   .hero-text {
+    max-width: 591px;
+
     .hero-title {
       max-width: 873px;
     }
@@ -56,6 +58,7 @@
       padding: 0px!important;
     }
     .hero-text {
+      max-width: none;
       order: 0;
     }
   }
