@@ -1,6 +1,6 @@
 <main class="main">
   <header class="page-header">
-    <app-navigation></app-navigation>
+    <app-navigation [ngClass]="{ 'hidden-top-menu': isMenuHidden }"></app-navigation>
   </header>
   <div class="page-body">
     <router-outlet />

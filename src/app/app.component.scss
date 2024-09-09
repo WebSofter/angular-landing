@@ -17,3 +17,12 @@
 .page-body {
   flex-grow: 1;
 }
+app-navigation {
+  transition: opacity 0.2s linear;
+}
+@include respond-to('llg') {
+  .hidden-top-menu {
+    transition: opacity 0.2s linear;
+    display: none;
+  }
+}
