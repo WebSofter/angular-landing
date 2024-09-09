@@ -78,4 +78,8 @@
     content: url('/images/icons/recovery-convert.svg');
     vertical-align: middle;
   }
+  &-lock:before{
+    content: url('/images/icons/lock.svg');
+    vertical-align: middle;
+  }
 }

@@ -26,6 +26,24 @@
       background-position: center bottom;
     }
   }
+  .benefit-card {
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 493px;
+    text-align: center;
+    border-radius: 32px;
+    padding: 40px 16px 16px 16px;
+    margin-bottom: 16px;
+
+    &-title {
+      font-size: 24px;
+      font-size: bold;
+      color: white;
+    }
+  }
 }
 /**
 * Mobile: Block Big Image 1
