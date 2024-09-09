@@ -12,14 +12,14 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-top: 150px;
-  max-width: 1190px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 107px 16px 0 16px;
   // overflow: hidden;
 
   .hero-image {
     background-image: url('/images/banner-bg-1.svg');
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
     background-size: contain;
     text-align: center;
@@ -80,12 +80,18 @@
   justify-content: center;
   padding-top: 40px;
   padding-bottom: 59px;
+  padding: 0 16px 50px 16px;
+
+  & > * {
+    max-width: 1200px;
+  }
 
   p {
-    max-width: 1224px;
+    padding-bottom: 30px;
   }
   .card-adv {
-    width: 358px;
+    max-width: 358px;
+    width: 30%;
     padding: 25px;
     background-repeat: no-repeat;
     background-position: center;
@@ -116,10 +122,10 @@
 * Desktop: Block Economy
 */
 .block-economy {
-  height: 679px;
   display: flex;
   justify-content: center;
-  padding-top: 106px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 
   .wrapper {
     max-width: 887px;
@@ -164,19 +170,29 @@
 * Desktop: Block Infolist
 */
 .block-infolist {
-  height: 869px;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  padding-bottom: 50px;
 }
 
 /**
 * Desktop: How To Working
 */
 .block-how2working {
-  height: 846px;
-  padding-top: 114px;
+  // height: 846px;
+  padding-top: 50px;
+  padding-bottom: 107px;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+
+  & > * {
+    max-width: 1200px;
+  }
+
   .work-item {
     width: 313.5px;
     .card {
@@ -225,7 +241,6 @@
   display: block;
 }
 
-
 /**
 * Desktop: Block Price
 */
@@ -235,9 +250,16 @@
   flex-direction: column;
   background-color: $color-white;
   justify-content: center;
+  align-items: center;
+  padding: 0 16px 0 16px;
+
+  & > * {
+    max-width: 1200px;
+  }
 
   .price-card {
-    width: 403px;
+    max-width: 403px;
+    width: 30%;
     border-radius: 25px;
     overflow:hidden;
 
