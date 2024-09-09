@@ -3,6 +3,18 @@
 @import '../../../styles/vendor/typed';
 
 /**
+* Mobile: Block Big Image 1
+*/
+.block-bigimage-1 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 656px;
+  display: block;
+  background-position: bottom;
+  background-position-x: -260px;
+}
+
+/**
 * Mobile: Our Products
 */
 .block-products {
@@ -74,6 +86,17 @@
 }
 
 /**
+* Mobile: Block Big Image 2
+*/
+.block-bigimage-2 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 838px;
+  display: block;
+  background-position: bottom;
+}
+
+/**
 * Mobile: Block Blog
 */
 .block-blog {
@@ -114,15 +137,4 @@
       }
     }
   }
-}
-
-/**
-* Mobile: Block Big Image
-*/
-.block-bigimage-mobile {
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 838px;
-  display: block;
-  background-position: bottom;
 }
