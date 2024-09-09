@@ -2,6 +2,31 @@
 @import '../../../styles/_mixins';
 @import '../../../styles/vendor/typed';
 
+
+/**
+* Mobile: Block Benefit
+*/
+.block-benefit {
+  background-color: $color-white;
+  min-height: 250px;
+  padding: 40px 16px 40px 16px;
+
+  &-description {
+    text-align: justify;
+    font-size: 20px;
+    color: $color-black;
+    font-weight: $font-weight-semibold;
+
+    &:after {
+      content: "";
+      display: block;
+      height: 15px;
+      background-image: url('/images/mobile/edge-border.svg');
+      background-repeat: no-repeat;
+      background-position: center bottom;
+    }
+  }
+}
 /**
 * Mobile: Block Big Image 1
 */
