@@ -43,13 +43,17 @@
     flex-direction: column;
     background-color: $color-black;
     width: 100%;
+    max-width: 100%;
     height: auto;
+    padding: 107px 0 0 0;
 
     .hero-image {
       background-image: url('/images/banner-bg.png');
       height: 390px;
       width: 100%;
+      max-width: 100%;
       order: 1;
+      padding: 0px!important;
     }
     .hero-text {
       order: 0;
