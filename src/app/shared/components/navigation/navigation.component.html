@@ -3,20 +3,22 @@
     <div class="top-logo">
       <img src="images/logo.svg" />
     </div>
-    <ul [ngClass]="isMobileMenuOpened ? 'mobile-active' : 'd-none'">
-      <li class="menu-item">
-        <a routerLink="/home" routerLinkActive="active">Главная</a>
-      </li>
-      <li class="menu-item">
-        <a routerLink="/products" routerLinkActive="active">Продукты</a>
-      </li>
-      <li class="menu-item">
-        <a routerLink="/about" routerLinkActive="active">О нас</a>
-      </li>
-      <li class="menu-item">
-        <a routerLink="/blog" routerLinkActive="active">Блог</a>
-      </li>
-    </ul>
+    <div class="menu-wrapper" [ngClass]="isMobileMenuOpened ? 'mobile-active' : 'd-none'">
+      <ul>
+        <li class="menu-item">
+          <a routerLink="/home" routerLinkActive="active">Главная</a>
+        </li>
+        <li class="menu-item">
+          <a routerLink="/products" routerLinkActive="active">Продукты</a>
+        </li>
+        <li class="menu-item">
+          <a routerLink="/about" routerLinkActive="active">О нас</a>
+        </li>
+        <li class="menu-item">
+          <a routerLink="/blog" routerLinkActive="active">Блог</a>
+        </li>
+      </ul>
+    </div>
   </div>
   <div class="end-menu">
     <span class="ext-menu-auth">

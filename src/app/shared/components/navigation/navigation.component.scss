@@ -7,6 +7,7 @@
   top: 0px;
   background-color: $color-black;
   height: 63px;
+  z-index: 1;
   // width: 100%;
   width: -webkit-fill-available;
   width: -moz-available;;
@@ -30,8 +31,15 @@
       }
     }
 
+    .d-none {
+      display: none;
+    }
+
     //@include respond-to('xl') {
+    .menu-wrapper {
       ul {
+        margin: 0 auto;
+
         li {
           list-style: none;
           float: left;
@@ -50,33 +58,41 @@
           }
         }
       }
+    }
     //}
 
     @include respond-to('md') {
-      ul {
+      .menu-wrapper {
         position: absolute;
-        background-color: $color-black;
-        width: 100%;
         top: 63px;
         left: 0px;
-        text-align: center;
-        margin: 0px;
-        padding-left: 0px;
-        display: none;
-        &.mobile-active {
-          display: block;
-        }
-        li {
-          float: none;
-          a {
-            &.active {
-              position: relative;
+        height: 100%;
 
-              &:before {
-                content: url('/images/marker-ellipse.svg');
-                position: absolute;
-                top: -18px;
-                left: -20px;
+        &.mobile-active {
+          height: 100vh;
+          display: block;
+          width: 100%;
+          background-color: $color-black;
+        }
+
+        ul {
+          width: 100%;
+          text-align: center;
+          margin: 0px;
+          padding-left: 0px;
+
+          li {
+            float: none;
+            a {
+              &.active {
+                position: relative;
+
+                &:before {
+                  content: url('/images/marker-ellipse.svg');
+                  position: absolute;
+                  top: -18px;
+                  left: -20px;
+                }
               }
             }
           }
