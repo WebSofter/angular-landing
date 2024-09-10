@@ -182,6 +182,10 @@
   justify-content: start;
   align-items: center;
   padding-bottom: 50px;
+  app-accordion {
+    width: 100%;
+    max-width: 1071px;
+  }
 }
 
 /**
