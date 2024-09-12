@@ -42,39 +42,21 @@
   }
 
   @include respond-to('md') {
-    flex-direction: column;
-    background-color: $color-black;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    padding: 50px 0 0 0;
 
-    .hero-image {
-      background-image: url('/images/banner-bg.png');
-      height: 390px;
-      width: 100%;
-      max-width: 100%;
-      order: 1;
-      padding: 0px!important;
-    }
-    .hero-text {
-      max-width: none;
-      order: 0;
-    }
   }
-  .hero-anime-text {
-    pointer-events: none;
-    @include typed(
-      "современный бизнес",
-      "автоматизацию и продуктивность",
-      1.5,
-      (
-        caret-width: 5px,
-        caret-space: 3px,
-        caret-color: $color-blue-6
-      )
-    );
-  }
+  // .hero-anime-text {
+  //   pointer-events: none;
+  //   @include typed(
+  //     "современный бизнес",
+  //     "автоматизацию и продуктивность",
+  //     1.5,
+  //     (
+  //       caret-width: 5px,
+  //       caret-space: 3px,
+  //       caret-color: $color-blue-6
+  //     )
+  //   );
+  // }
 }
 
 
@@ -88,6 +70,7 @@
   padding-top: 40px;
   padding-bottom: 59px;
   padding: 0 16px 50px 16px;
+  flex-direction: column;
 
   & > * {
     max-width: 1200px;
@@ -120,6 +103,20 @@
     &:nth-child(3) {
       height: 515px;
       background-size: 241px auto;
+    }
+  }
+
+  @include respond-to('md') {
+    height: auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+    .wrapper {
+      flex-direction: column;
+      width: 100%;
+
+      .card-adv {
+        width: 100%;
+      }
     }
   }
 
@@ -169,6 +166,18 @@
       height: 280px;
       width: 275px;
       border-radius: 20px;
+    }
+  }
+
+  @include respond-to('md') {
+    .wrapper {
+      > * {
+        flex-wrap: wrap;
+      }
+
+      .card-adv {
+
+      }
     }
   }
 }
