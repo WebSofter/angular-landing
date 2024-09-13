@@ -93,7 +93,7 @@
         &-top {
           padding-top: 66px;
           flex-wrap: wrap;
-          justify-content: center;
+          justify-content: space-around;
         }
         &-bottom {
           padding: 0 41px 31px 41px;
@@ -107,6 +107,7 @@
         align-items: center;
         p {
           padding: 0 41px 0 41px;
+          text-align: center;
         }
       }
       &-menu, &-social {
