@@ -434,6 +434,8 @@
   }
   & > p {
     max-width: 568px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .card-recoment-text {
       color: $color-white;
@@ -506,7 +508,8 @@
       flex-direction: column;
 
       .price-card {
-        width: 100%;
+        max-width: initial;
+        width: initial;
         margin-bottom: 16px;
         .head {
           height: 200px;

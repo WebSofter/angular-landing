@@ -82,4 +82,20 @@
     content: url('/images/icons/lock.svg');
     vertical-align: middle;
   }
+  &-crown:before{
+    content: url('/images/icons/crown.svg');
+    vertical-align: middle;
+  }
+  &-document-normal:before{
+    content: url('/images/icons/document-normal.svg');
+    vertical-align: middle;
+  }
+  &-crown-black:before{
+    content: url('/images/icons/crown-black.svg');
+    vertical-align: middle;
+  }
+  &-document-normal-black:before{
+    content: url('/images/icons/document-normal-black.svg');
+    vertical-align: middle;
+  }
 }
