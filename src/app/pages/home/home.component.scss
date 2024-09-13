@@ -453,6 +453,7 @@
       width: 30%;
       border-radius: 25px;
       overflow: hidden;
+      padding-top: 20px;
 
       &:nth-child(2) {
         margin-left: 14px;
@@ -507,13 +508,19 @@
       .price-card {
         width: 100%;
         margin-bottom: 16px;
-        padding-top: 10px;
         .head {
-          height: auto;
+          height: 176px;
         }
         &:nth-child(2) {
           margin-left: initial;
           margin-right: initial;
+        }
+        .foot {
+          a {
+            width: -webkit-fill-available;
+            width: -moz-fill-available;
+            width: fill-available;
+          }
         }
       }
     }
